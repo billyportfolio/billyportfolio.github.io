@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billy - Courts-métrages</title>
+  <meta name="description" content="Courts-métrages réalisés par Billy">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Billy Du</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Photos</a></li>
+        <li><a href="films.html" class="active">Courts-métrages</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero hero-films">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Billy Du</h1>
+        <p>Courts-métrages</p>
+      </div>
+      <div class="hero-scroll">
+        <a href="#portfolio">Découvrir ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="portfolio">
+    <section class="projects-section">
+      <div class="projects-header">
+        <h2 class="section-title">Mes courts-métrages</h2>
+      </div>
+      
+      <div class="projects-cards">
+        <div class="project-card active" data-target="film-cahot">
+          <span class="card-number">01</span>
+          <img src="./Courts-metrages/CAHOT/Cahot - 1.webp" alt="Cahot">
+          <div class="card-overlay">
+            <h3>CAHOT</h3>
+            <p>Court-métrage</p>
+          </div>
+        </div>
+        <div class="project-card" data-target="film-damnes">
+          <span class="card-number">02</span>
+          <img src="./Courts-metrages/Damnes/Damnés 3.webp" alt="Damnés">
+          <div class="card-overlay">
+            <h3>DAMNÉS</h3>
+            <p>Court-métrage</p>
+          </div>
+        </div>
+        <div class="project-card" data-target="film-40ptn">
+          <span class="card-number">03</span>
+          <img src="./Courts-metrages/40 PTN DE TONNES/40 putain de tonnes (3).webp" alt="40 PTN DE TONNES">
+          <div class="card-overlay">
+            <h3>40 PTN</h3>
+            <p>Court-métrage</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-details">
+      <!-- Film 1: CAHOT -->
+      <div class="film-section project-details-item active" id="film-cahot">
+        <div class="film-header">
+          <div class="film-info">
+            <h2 class="film-title">CAHOT</h2>
+          </div>
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/jk_nChRWNC8" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="stills-gallery" data-gallery="cahot" data-folder="Courts-metrages/CAHOT">
+          <img src="./Courts-metrages/CAHOT/Cahot - 1.webp" alt="Cahot Still 1" loading="lazy">
+          <img src="./Courts-metrages/CAHOT/Cahot - 2.webp" alt="Cahot Still 2" loading="lazy">
+          <img src="./Courts-metrages/CAHOT/Cahot - 5.webp" alt="Cahot Still 3" loading="lazy">
+          <img src="./Courts-metrages/CAHOT/Cahot - 8.webp" alt="Cahot Still 4" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Film 2: Damnés -->
+      <div class="film-section project-details-item" id="film-damnes" style="display: none;">
+        <div class="film-header">
+          <div class="film-info">
+            <h2 class="film-title">DAMNÉS</h2>
+          </div>
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/w8v5g0ksAVU" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="stills-gallery" data-gallery="damnes" data-folder="Courts-metrages/Damnes">
+          <img src="./Courts-metrages/Damnes/Damnés 1.webp" alt="Damnes Still 1" loading="lazy">
+          <img src="./Courts-metrages/Damnes/Damnés 3.webp" alt="Damnes Still 2" loading="lazy">
+          <img src="./Courts-metrages/Damnes/Damnés 4.webp" alt="Damnes Still 3" loading="lazy">
+          <img src="./Courts-metrages/Damnes/Damnés 6.webp" alt="Damnes Still 4" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Film 3: 40 PTN DE TONNES -->
+      <div class="film-section project-details-item" id="film-40ptn" style="display: none;">
+        <div class="film-header">
+          <div class="film-info">
+            <h2 class="film-title">40 PTN DE TONNES</h2>
+          </div>
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/ASBbx8aEDmc" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="stills-gallery" data-gallery="40ptn" data-folder="Courts-metrages/40 PTN DE TONNES">
+          <img src="./Courts-metrages/40 PTN DE TONNES/40 putain de tonnes (2).webp" alt="40 ptn Still 1" loading="lazy">
+          <img src="./Courts-metrages/40 PTN DE TONNES/40 putain de tonnes (3).webp" alt="40 ptn Still 2" loading="lazy">
+          <img src="./Courts-metrages/40 PTN DE TONNES/40 putain de tonnes (7).webp" alt="40 ptn Still 3" loading="lazy">
+          <img src="./Courts-metrages/40 PTN DE TONNES/40 putain de tonnes (10).webp" alt="40 ptn Still 4" loading="lazy">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="footer-content">
+      <p class="footer-subtitle">Pour en voir plus</p>
+      <h2 class="footer-title">Retrouvez moi sur Instagram</h2>
+      <p class="footer-desc">
+        @billywithacamera
+      </p>
+      <a href="https://www.instagram.com/billywithacamera/" target="_blank" class="btn-instagram">Découvrir les coulisses sur Instagram</a>
+    </div>
+    <div class="footer-bottom">
+      <p>© Billy Du Photographie</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox (Modale) -->
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox-close" aria-label="Fermer">&#10005;</button>
+    <button class="lightbox-prev" aria-label="Précédent">&#8592;</button>
+    <button class="lightbox-next" aria-label="Suivant">&#8594;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" class="lightbox-img" src="" alt="Agrandissement">
+    </div>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
