@@ -40,6 +40,18 @@ document.addEventListener('DOMContentLoaded', () => {
             if (targetContainer.classList.contains('masonry-gallery')) {
               bindLightboxToGallery(targetContainer);
             }
+            // Défiler doucement jusqu'à la galerie (uniquement sur mobile)
+            if (window.innerWidth <= 768) {
+              setTimeout(() => {
+                const headerOffset = 100;
+                const elementPosition = targetContainer.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.scrollY - headerOffset;
+                window.scrollTo({
+                  top: offsetPosition,
+                  behavior: "smooth"
+                });
+              }, 50); // Petit délai pour laisser le temps au navigateur de rendre l'affichage
+            }
           }
         });
       });
